@@ -3,11 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel=stylesheet href="https://prosemirror.net/css/editor.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Nested element in contenteditable</title>
   </head>
   <body>
-    <div id="app"></div>
+    <div id="app">
+
+
+      <div id=editor style="margin-bottom: 23px"></div>
+
+      <div id="content">
+        Left<span>Nested</span>Right
+      </div>
+      
+      <div id="content">
+        Left<span contenteditable="false"></span><span>Nested</span><span contenteditable="false"></span>Right
+      </div>
+
+      <!-- <div contenteditable="true">
+        Left
+        <span class="p1">1st<span class="p2">CHILD</span><span contenteditable="false"></span></span>
+        Right
+      </div> -->
+
+
+    </div>
     <script type="module" src="/main.js"></script>
   </body>
 </html>

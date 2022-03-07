@@ -9,5 +9,11 @@
   },
   "devDependencies": {
     "vite": "^2.8.0"
+  },
+  "dependencies": {
+    "prosemirror-menu": "^1.1.4",
+    "prosemirror-model": "^1.16.1",
+    "prosemirror-state": "^1.3.4",
+    "prosemirror-view": "^1.23.7"
   }
 }
