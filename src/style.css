@@ -1,5 +1,5 @@
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 32px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -11,8 +11,15 @@
   display: none;
 }
 
-.ProseMirror span {
-  background-color: cyan;
+#native-content {
+  padding: 15px;
+  border: 1px solid;
+}
+
+.nested, nested {
+  background-color: darkturquoise;
+  border-radius: 15px;
   margin: 5px;
   padding: 5px;
+  display: inline-block;
 }
